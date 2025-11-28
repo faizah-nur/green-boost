@@ -1,9 +1,752 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GREEN BOOTS</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="assets/css/output.css" />
   </head>
-  <body></body>
+  <body class="bg-green-100">
+    <!-- HEADER -->
+    <header>
+      <nav
+        class="py-3 md:px-8 px-3 flex justify-between items-center fixed top-0 left-0 right-0 bg-green-100/70 z-50"
+      >
+        <a href="#">
+          <img class="max-w-22" src="assets/img/logo.png" alt="logo" />
+        </a>
+
+        <!-- HAMBURGER -->
+        <button id="hamburger-menu" class="md:hidden text-green-700">
+          <i data-feather="menu"></i>
+        </button>
+
+        <!-- MENU -->
+        <ul
+          class="navbar-nav md:flex md:gap-8 gap-3 flex-col md:flex-row absolute md:static top-16 left-0 right-0 md:bg-transparent p-5 md:p-0 hidden bg-lime-500/70"
+        >
+          <li>
+            <a
+              class="text-white md:text-green-700 md:font-bold hover:text-green-900"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-white md:text-green-700 md:font-bold hover:text-green-900"
+              href="pages/about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-white md:text-green-700 md:font-bold hover:text-green-900"
+              href="pages/produk.html"
+              >Product</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-white md:text-green-700 md:font-bold hover:text-green-900"
+              href="pages/kontak.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- HERO -->
+      <div class="hero md:relative md:h-screen md:px-16">
+        <h1
+          class="font-extrabold text-5xl md:text-9xl text-center text-green-700 mb-24 pt-16 tracking-widest"
+        >
+          GREEN <span class="text-lime-500">BOOST</span>
+        </h1>
+        <img
+          class="absolute left-1/2 -translate-x-1/2 top-17 md:top-24 drop-shadow-2xl drop-shadow-green-700/25 md:max-w-md max-w-60"
+          src="assets/img/brand.png"
+          alt="hero"
+        />
+        <!-- CONTENT -->
+        <div
+          class="content md:flex justify-between items-center px-5 md:mt-0 mt-52"
+        >
+          <!-- BUTTON -->
+          <div class="button md:w-100">
+            <button
+              class="w-full mb-3 relative z-10 py-2 md:py-4 rounded-lg text-lime-900 bg-green-100 border-2 border-lime-500 hover:border-lime-300 hover:text-lime-700 font-bold"
+            >
+              Buy
+            </button>
+            <button
+              class="w-full relative z-10 bg-lime-600 py-2 md:py-4 rounded-lg text-white hover:bg-lime-500 font-bold"
+            >
+              Go to store
+            </button>
+            <div class="icon flex justify-center mt-10 md:mt-10 gap-15">
+              <a class="z-10 text-rose-800 hover:text-rose-400" href="#"
+                ><i data-feather="instagram"></i
+              ></a>
+              <a class="z-10 text-emerald-900 hover:text-emerald-600" href="#"
+                ><i data-feather="map-pin"></i
+              ></a>
+              <a class="z-10 text-amber-700 hover:text-amber-500" href="#"
+                ><i data-feather="send"></i
+              ></a>
+            </div>
+          </div>
+          <!-- KETERANGAN -->
+          <div class="text font-mono text-sm text-justify md:w-100">
+            <div
+              class="card flex gap-3 mt-15 md:mt-0 justify-between items-center flex-wrap"
+            >
+              <div class="box max-w-28">
+                <img
+                  class="max-w-15 mb-2 mx-auto"
+                  src="assets/img/apple.png"
+                  alt="apple"
+                />
+                <p
+                  class="text-center font-bold mb-3 py-1 px-2 bg-red-900 text-white rounded-2xl"
+                >
+                  Buah-buahan
+                </p>
+              </div>
+              <div class="box max-w-28">
+                <img
+                  class="max-w-20 mx-auto"
+                  src="assets/img/sawiBunga.png"
+                  alt="apple"
+                />
+                <p
+                  class="text-center font-bold mb-3 py-1 px-2 bg-emerald-900 text-white rounded-2xl"
+                >
+                  Sayuran
+                </p>
+              </div>
+              <div class="box max-w-28">
+                <img
+                  class="max-w-20 mx-auto"
+                  src="assets/img/ubi.png"
+                  alt="apple"
+                />
+                <p
+                  class="text-center font-bold mb-3 py-1 px-2 bg-violet-950 text-white rounded-2xl"
+                >
+                  Ubi Jalar
+                </p>
+              </div>
+            </div>
+            <p>
+              pupuk organik cair berbahan fermentasi air kelapa, meningkatkan
+              kesuburan tanah, mempercepat pertumbuhan tanaman. Kaya nutrisi
+              alami seperti nitrogen, fosfor, kalium, mineral mikro, serta
+              mikroorganisme baik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER END -->
+    <main class="w-full px-10 md:px-16">
+      <!-- ABOUT -->
+      <section class="w-full lg:h-screen relative mt-10">
+        <h1
+          class="text-center font-bold text-3xl pb-3 pt-7 text-green-700 relative z-10"
+        >
+          About <span class="text-lime-500">Us</span>
+        </h1>
+        <div class="container md:flex justify-center gap-5">
+          <article
+            class="md:w-3/5 md:text-justify py-6 px-6 border-2 rounded-l-4xl border-green-700"
+          >
+            <h2 class="font-bold text-xl text-green-700">Visi</h2>
+            <p>
+              Menjadi pelopor inovasi pertanian berkelanjutan melalui
+              pemanfaatan bahan alami dan limbah organik, sehingga mampu
+              meningkatkan kesuburan tanah, produktivitas tanaman, serta
+              kesejahteraan petani Indonesia.
+            </p>
+            <h2 class="font-bold text-xl text-lime-500 mt-3">Misi</h2>
+            <ul class="list-decimal">
+              <li>
+                Menghadirkan produk pertanian ramah lingkungan yang aman,
+                efektif, dan berbasis pemanfaatan limbah organik.
+              </li>
+              <li>
+                Meningkatkan kesuburan tanah dan kualitas hasil panen melalui
+                pupuk organik cair seperti KOPCA-E4.
+              </li>
+              <li>
+                Mendorong petani beralih ke pertanian organik dan berkelanjutan
+                melalui edukasi, pelatihan, dan pendampingan.
+              </li>
+              <li>
+                Mengembangkan inovasi produk baru yang mendukung ekosistem
+                pertanian hijau secara menyeluruh.
+              </li>
+              <li>
+                Berperan dalam mengurangi limbah industri dengan mengubahnya
+                menjadi solusi pertanian yang bermanfaat.
+              </li>
+              <li>
+                Membangun kemitraan dengan petani, UMKM, komunitas, dan lembaga
+                pendidikan untuk memperluas penerapan teknologi pertanian
+                organik.
+              </li>
+            </ul>
+          </article>
+          <aside
+            class="lg:block hidden md:w-96 items-center xl:flex justify-center border-2 rounded-r-4xl border-green-700"
+          >
+            <img
+              class="drop-shadow-xl/25"
+              src="assets/img/kopca6.png"
+              alt="img"
+            />
+          </aside>
+        </div>
+      </section>
+      <!-- ABOUT END -->
+
+      <!-- MANFAAT -->
+      <section
+        class="mt-20 md:py-5 md:px-5 mb-10 bg-linear-65 from-lime-600/20 to-green-100 rounded-4xl"
+      >
+        <!-- gambar -->
+        <img
+          class="max-w-30 border-2 rounded-full py-1 px-1 border-green-700 mx-auto"
+          src="assets/img/sawiBunga.png"
+          alt="sawi"
+        />
+        <!-- keterangan -->
+        <div class="keterangan font-semibold">
+          <h2 class="font-bold text-xl text-center text-green-700">
+            Manfaat <span class="text-lime-500">KOPCA-E4</span>
+          </h2>
+          <p class="text-center text-slate-800">
+            <span class="text-lime-500">KOPCA-E4</span> mengandung nutrisi alami
+            hasil fermentasi air kelapa yang mampu meningkatkan kesuburan
+            tanaman secara cepat dan aman. Pupuk ini membantu memperkuat
+            perakaran, merangsang pertumbuhan daun serta batang, meningkatkan
+            pembentukan bunga dan buah, serta membuat tanaman lebih tahan
+            terhadap stres lingkungan. Selain itu,
+            <span class="text-lime-500">KOPCA-E4</span> mendukung perbaikan
+            struktur tanah, memperkaya mikroorganisme baik, dan dapat digunakan
+            untuk hampir semua jenis tanaman—mulai dari sayuran, tanaman buah,
+            tanaman hias, hingga tanaman keras.
+          </p>
+        </div>
+      </section>
+      <!-- MANFAAT END -->
+
+      <!-- KOMPOSISI -->
+      <section>
+        <h1
+          class="text-center font-bold text-3xl mb-5 pb-3 pt-7 text-green-700 relative z-10"
+        >
+          Komponen <span class="text-lime-500">KOPCA-E4</span>
+        </h1>
+        <div class="container md:flex justify-center gap-5 flex-wrap">
+          <!-- card 1 -->
+          <div
+            class="card mb-3 md:mb-0 md:mx-0 mx-auto md:max-w-50 max-w-70 pt-1 px-1 pb-2 bg-lime-600/20 rounded-b-4xl"
+          >
+            <!-- gambar -->
+            <div class="img relative w-full">
+              <img src="assets/img/airKelapa.jpeg" alt="img" />
+              <div
+                class="absolute inset-0 flex items-start justify-end mr-2 mt-2 text-emerald-800"
+              >
+                <a
+                  class="z-10"
+                  href="https://www.sciencedirect.com/science/article/pii/S2666517421000742?utm_source=chatgpt.com"
+                  ><i
+                    class="py-2 px-2 bg-white/50 box-content rounded-full"
+                    data-feather="arrow-right"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <!-- content -->
+            <div class="content text-center">
+              <h2 class="text-sm text-emerald-900 pt-2 px-2">
+                Air kelapa hasil limbah pabrik yang telah difermentasi
+              </h2>
+              <a
+                class="text-sm text-emerald-800 underline font-bold"
+                href="https://www.sciencedirect.com/science/article/pii/S2666517421000742?utm_source=chatgpt.com"
+                >Eksplorasi
+              </a>
+            </div>
+          </div>
+          <!-- csrd 2 -->
+          <div
+            class="card mb-3 md:mx-0 mx-auto md:max-w-50 max-w-70 pt-1 px-1 pb-2 bg-lime-600/20 rounded-b-4xl"
+          >
+            <!-- gambar -->
+            <div class="img relative w-full">
+              <img src="assets/img/mikroorganisme.jpeg" alt="img" />
+              <div
+                class="absolute inset-0 flex items-start justify-end mr-2 mt-2 text-emerald-800"
+              >
+                <a
+                  class="z-10"
+                  href="https://distanpangan.baliprov.go.id/potensi-bakteri-untuk-produktivitas-lahan-pertanian/?utm_source=chatgpt.com"
+                  ><i
+                    class="py-2 px-2 bg-white/50 box-content rounded-full"
+                    data-feather="arrow-right"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <!-- content -->
+            <div class="content text-center">
+              <h2 class="text-sm text-emerald-900 pt-2 px-2">
+                Mikroorganisme baik hasil proses fermentasi
+              </h2>
+              <a
+                class="text-sm text-emerald-800 underline font-bold"
+                href="https://distanpangan.baliprov.go.id/potensi-bakteri-untuk-produktivitas-lahan-pertanian/?utm_source=chatgpt.com"
+                >Eksplorasi
+              </a>
+            </div>
+          </div>
+          <!-- csrd 3 -->
+          <div
+            class="card mb-3 md:mx-0 mx-auto md:max-w-50 max-w-70 pt-1 px-1 pb-2 bg-lime-600/20 rounded-b-4xl"
+          >
+            <!-- gambar -->
+            <div class="img relative w-full">
+              <img src="assets/img/kalium.jpeg" alt="img" />
+              <div
+                class="absolute inset-0 flex items-start justify-end mr-2 mt-2 text-emerald-800"
+              >
+                <a
+                  class="z-10"
+                  href="https://tirto.id/manfaat-unsur-hara-nitrogen-kalium-dan-fosfor-bagi-tanaman-gBDJ?utm_source=chatgpt.com"
+                  ><i
+                    class="py-2 px-2 bg-white/50 box-content rounded-full"
+                    data-feather="arrow-right"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <!-- content -->
+            <div class="content text-center">
+              <h2 class="text-sm text-emerald-900 pt-2 px-2">
+                Kalium (K) alami dari air kelapa
+              </h2>
+              <a
+                class="text-sm text-emerald-800 underline font-bold"
+                href="https://tirto.id/manfaat-unsur-hara-nitrogen-kalium-dan-fosfor-bagi-tanaman-gBDJ?utm_source=chatgpt.com"
+                >Eksplorasi
+              </a>
+            </div>
+          </div>
+          <!-- csrd 4 -->
+          <div
+            class="card mb-3 md:mx-0 mx-auto md:max-w-50 max-w-70 pt-1 px-1 pb-2 bg-lime-600/20 rounded-b-4xl"
+          >
+            <!-- gambar -->
+            <div class="img relative w-full">
+              <img src="assets/img/fosfor(p).jpeg" alt="img" />
+              <div
+                class="absolute inset-0 flex items-start justify-end mr-2 mt-2 text-emerald-800"
+              >
+                <a
+                  class="z-10"
+                  href="https://www.idnfarmers.com/2021/09/manfaat-unsur-hara-makro-n-p-k-s-ca-mg.html?utm_source=chatgpt.com"
+                  ><i
+                    class="py-2 px-2 bg-white/50 box-content rounded-full"
+                    data-feather="arrow-right"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <!-- content -->
+            <div class="content text-center">
+              <h2 class="text-sm text-emerald-900 pt-2 px-2">
+                Fosfor (P) dan Nitrogen (N) organik
+              </h2>
+              <a
+                class="text-sm text-emerald-800 underline font-bold"
+                href="https://www.idnfarmers.com/2021/09/manfaat-unsur-hara-makro-n-p-k-s-ca-mg.html?utm_source=chatgpt.com"
+                >Eksplorasi
+              </a>
+            </div>
+          </div>
+          <!-- csrd 5 -->
+          <div
+            class="card mb-3 md:mx-0 mx-auto md:max-w-50 max-w-70 pt-1 px-1 pb-2 bg-lime-600/20 rounded-b-4xl"
+          >
+            <!-- gambar -->
+            <div class="img relative w-full">
+              <img src="assets/img/asamAmino.jpeg" alt="img" />
+              <div
+                class="absolute inset-0 flex items-start justify-end mr-2 mt-2 text-emerald-800"
+              >
+                <a
+                  class="z-10"
+                  href="https://coursework.uma.ac.id/index.php/pertanian/article/download/873/606/2159?utm_source=chatgpt.com"
+                  ><i
+                    class="py-2 px-2 bg-white/50 box-content rounded-full"
+                    data-feather="arrow-right"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <!-- content -->
+            <div class="content text-center">
+              <h2 class="text-sm text-emerald-900 pt-2 px-2">
+                Asam amino dan enzim pertumbuhan alami
+              </h2>
+              <a
+                class="text-sm text-emerald-800 underline font-bold"
+                href="https://coursework.uma.ac.id/index.php/pertanian/article/download/873/606/2159?utm_source=chatgpt.com"
+                >Eksplorasi
+              </a>
+            </div>
+          </div>
+          <!-- csrd 6 -->
+          <div
+            class="card mb-3 md:mx-0 mx-auto md:max-w-50 max-w-70 pt-1 px-1 pb-2 bg-lime-600/20 rounded-b-4xl"
+          >
+            <!-- gambar -->
+            <div class="img relative w-full">
+              <img src="assets/img/mikroorganisme.jpeg" alt="img" />
+              <div
+                class="absolute inset-0 flex items-start justify-end mr-2 mt-2 text-emerald-800"
+              >
+                <a
+                  class="z-10"
+                  href="https://p3bms.uma.ac.id/manfaat-eco-enzym-dalam-penyuburan-tanah/?utm_source=chatgpt.com"
+                  ><i
+                    class="py-2 px-2 bg-white/50 box-content rounded-full"
+                    data-feather="arrow-right"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <!-- content -->
+            <div class="content text-center">
+              <h2 class="text-sm text-emerald-900 pt-2 px-2">
+                Mineral mikro (Mg, Ca, Zn, Fe)
+              </h2>
+              <a
+                class="text-sm text-emerald-800 underline font-bold"
+                href="https://p3bms.uma.ac.id/manfaat-eco-enzym-dalam-penyuburan-tanah/?utm_source=chatgpt.com"
+                >Eksplorasi
+              </a>
+            </div>
+          </div>
+          <!-- csrd 7 -->
+          <div
+            class="card mb-3 md:mx-0 mx-auto md:max-w-50 max-w-70 pt-1 px-1 pb-2 bg-lime-600/20 rounded-b-4xl"
+          >
+            <!-- gambar -->
+            <div class="img relative w-full">
+              <img src="assets/img/nutrisiFotosintesis.jpeg" alt="img" />
+              <div
+                class="absolute inset-0 flex items-start justify-end mr-2 mt-2 text-emerald-800"
+              >
+                <a
+                  class="z-10"
+                  href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11201952/?utm_source=chatgpt.com"
+                  ><i
+                    class="py-2 px-2 bg-white/50 box-content rounded-full"
+                    data-feather="arrow-right"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <!-- content -->
+            <div class="content text-center">
+              <h2 class="text-sm text-emerald-900 pt-2 px-2">
+                Nutrisi pendukung fotosintesis
+              </h2>
+              <a
+                class="text-sm text-emerald-800 underline font-bold"
+                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11201952/?utm_source=chatgpt.com"
+                >Eksplorasi
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- KOMPOSISI END -->
+
+      <!-- CARA PAKAI -->
+      <section class="pt-20">
+        <article>
+          <h1
+            class="text-center font-bold text-3xl mb-3 pb-3 pt-5 text-green-700 relative z-10"
+          >
+            Cara Pakai <span class="text-lime-500">KOPCA-E4</span>
+          </h1>
+          <div class="card md:flex justify-center gap-5 flex-wrap">
+            <!-- box 1 -->
+            <div
+              class="box mb-3 md:mb-0 md:mx-0 mx-auto md:max-w-52 md:px-1 max-w-70 pt-1 px-5 pb-4 relative"
+            >
+              <img
+                class="w-full relative z-10"
+                src="assets/img/kopca4.png"
+                alt="img"
+              />
+              <h2
+                class="text-center text-sm font-bold text-emerald-900 relative z-20"
+              >
+                1. Penggunaan rutin
+              </h2>
+              <ul
+                class="text-left text-sm list-disc pl-6 text-emerald-900 relative z-20"
+              >
+                <li>Campurkan 10–20 ml KOPCA-E4 ke dalam 1 lt air.</li>
+                <li>Siram ke tanah/daun 2–3x per minggu.</li>
+              </ul>
+              <!-- sampul -->
+              <div
+                class="w-full h-3/4 rounded-b-4xl absolute bottom-0 left-0 bg-lime-600/20"
+              ></div>
+            </div>
+            <!-- box 2 -->
+            <div
+              class="box mb-3 md:mb-0 md:mx-0 mx-auto md:max-w-52 md:px-1 max-w-70 pt-1 px-5 pb-4 relative"
+            >
+              <img
+                class="w-full relative z-10"
+                src="assets/img/tanamanSelad.png"
+                alt="img"
+              />
+              <h2
+                class="text-center text-sm font-bold text-emerald-900 relative z-20"
+              >
+                2. Tanaman sayur
+              </h2>
+              <ul
+                class="text-left text-sm list-disc pl-6 text-emerald-900 relative z-20"
+              >
+                <li>Dosis: 15 ml / 1 liter air.</li>
+                <li>
+                  Aplikasi: Semprotkan ke daun dan siram ke akar untuk
+                  pertumbuhan cepat.
+                </li>
+              </ul>
+              <!-- sampul -->
+              <div
+                class="w-full h-3/4 bg-lime-600/20 rounded-b-4xl absolute bottom-0 left-0"
+              ></div>
+            </div>
+            <!-- box 3 -->
+            <div
+              class="box mb-3 md:mb-0 md:mx-0 mx-auto md:max-w-52 md:px-1 max-w-70 pt-1 px-5 pb-4 relative"
+            >
+              <img
+                class="w-full relative z-10"
+                src="assets/img/tanamanSrto.png"
+                alt="img"
+              />
+              <h2
+                class="text-center text-sm font-bold text-emerald-900 relative z-20"
+              >
+                3. Tanaman buah
+              </h2>
+              <ul
+                class="text-left text-sm list-disc pl-6 text-emerald-900 relative z-20"
+              >
+                <li>Dosis: 20–30 ml / 1 liter air.</li>
+                <li>
+                  Aplikasi: Siram di sekitar akar untuk merangsang bunga dan
+                  pembesaran buah.
+                </li>
+              </ul>
+              <!-- sampul -->
+              <div
+                class="w-full h-3/4 bg-lime-600/20 rounded-b-4xl absolute bottom-0 left-0"
+              ></div>
+            </div>
+            <!-- box 4 -->
+            <div
+              class="box mb-3 md:mb-0 md:mx-0 mx-auto md:max-w-52 md:px-1 max-w-70 pt-1 px-5 pb-4 relative"
+            >
+              <img
+                class="w-full relative z-10"
+                src="assets/img/tanamanHias.png"
+                alt="img"
+              />
+              <h2
+                class="text-center text-sm font-bold text-emerald-900 relative z-20"
+              >
+                4. Tanaman hias
+              </h2>
+              <ul
+                class="text-left text-sm list-disc pl-6 text-emerald-900 relative z-20"
+              >
+                <li>Dosis: 10 ml / 1 liter air.</li>
+                <li>
+                  Aplikasi: Semprot ringan pada daun untuk warna lebih cerah.
+                </li>
+              </ul>
+              <!-- sampul -->
+              <div
+                class="w-full h-3/4 bg-lime-600/20 rounded-b-4xl absolute bottom-0 left-0"
+              ></div>
+            </div>
+            <!-- box 5 -->
+            <div
+              class="box mb-3 md:mb-0 md:mx-0 mx-auto md:max-w-52 md:px-1 max-w-70 pt-1 px-5 pb-4 relative"
+            >
+              <img
+                class="w-full relative z-10"
+                src="assets/img/kopca1.png"
+                alt="img"
+              />
+              <h2
+                class="text-center text-sm font-bold text-emerald-900 relative z-20"
+              >
+                5. Catatan penggunaan
+              </h2>
+              <ul
+                class="text-left text-sm list-disc pl-6 text-emerald-900 relative z-20"
+              >
+                <li>Kocok sebelum digunakan.</li>
+                <li>Hindari aplikasi saat matahari terik.</li>
+                <li>Aman digunakan jangka panjang.</li>
+              </ul>
+              <!-- sampul -->
+              <div
+                class="w-full h-3/4 bg-lime-600/20 rounded-b-4xl absolute bottom-0 left-0"
+              ></div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- CARA PAKAI END -->
+
+      <!-- PENGGUNAAN -->
+      <section>
+        <h1
+          class="text-center font-bold text-3xl mb-3 pb-3 mt-30 text-green-700 relative z-10"
+        >
+          Hasil Penggunaan <span class="text-lime-500">KOPCA-E4</span>
+        </h1>
+        <article>
+          <div class="card md:flex gap-5">
+            <!-- card1 -->
+            <div class="w-full md:max-w-1/2 md:px-15 px-5 pb-6 relative">
+              <img
+                class="max-w-60 mx-auto relative z-10"
+                src="assets/img/beffore.png"
+                alt="img"
+              />
+              <h2 class="font-bold text-emerald-900 mb-2 text-center">
+                Sebelum penggunaan
+              </h2>
+              <p class="max-w-full text-center text-emerald-900 relative z-10">
+                Tanaman cenderung tumbuh lambat, daun pucat atau menguning, akar
+                lemah, dan produktivitas rendah. Pada beberapa tanaman,
+                pembentukan bunga tidak optimal dan buah sering rontok. Tanah
+                tampak keras, kurang subur, dan minim mikroorganisme baik.
+              </p>
+              <!-- sampul -->
+              <div
+                class="w-full h-3/4 bg-lime-600/20 rounded-t-full absolute bottom-0 left-0"
+              ></div>
+            </div>
+            <!-- card 2 -->
+            <div class="w-full md:max-w-1/2 md:px-15 px-5 pb-6 relative">
+              <img
+                class="max-w-60 mx-auto relative z-10"
+                src="assets/img/after.png"
+                alt="img"
+              />
+              <h2 class="font-bold text-emerald-900 text-center mb-2">
+                Setelah penggunaan
+              </h2>
+              <p class="max-w-full text-center text-emerald-900 relative z-10">
+                Tanaman tumbuhan lebih cepat, daun hijau, batang lebih kuat, dan
+                akar lebih berkembang. Pembentukan bunga meningkat, buah lebih
+                besar dan banyak, serta kualitas panen menjadi lebih baik. Serta
+                kaya nutrisi alami. Secara keseluruhan, tanaman tampak lebih
+                sehat.
+              </p>
+              <!-- sampul -->
+              <div
+                class="w-full h-3/4 bg-lime-600/20 rounded-t-full absolute bottom-0 left-0"
+              ></div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- PENGGUNAAN END -->
+    </main>
+    <!-- FOOTER -->
+    <footer class="bg-green-900 text-white mt-30">
+      <div
+        class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between gap-8"
+      >
+        <div class="brand max-w-sm">
+          <img src="assets/img/logo.png" alt="GREEN BOOST" class="h-10 mb-3" />
+          <p class="text-sm text-green-200">
+            GREEN BOOST — Solusi pupuk organik cair berbahan alami untuk
+            pertanian berkelanjutan.
+          </p>
+        </div>
+        <div class="links flex gap-8">
+          <div>
+            <h3 class="font-bold mb-2">Product</h3>
+            <ul class="space-y-1 text-sm">
+              <li>
+                <a class="text-green-200 hover:text-white" href="#">Buy</a>
+              </li>
+              <li>
+                <a class="text-green-200 hover:text-white" href="#">Store</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold mb-2">Company</h3>
+            <ul class="space-y-1 text-sm">
+              <li>
+                <a class="text-green-200 hover:text-white" href="#">About</a>
+              </li>
+              <li>
+                <a class="text-green-200 hover:text-white" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="social">
+          <h3 class="font-bold mb-2">Follow</h3>
+          <div class="flex gap-3">
+            <a class="text-green-200 hover:text-white" href="#"
+              ><i data-feather="instagram"></i
+            ></a>
+            <a class="text-green-200 hover:text-white" href="#"
+              ><i data-feather="facebook"></i
+            ></a>
+            <a class="text-green-200 hover:text-white" href="#"
+              ><i data-feather="twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-green-800 text-green-200 text-sm py-4">
+        <div
+          class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between"
+        >
+          <span>© 2025 GREEN BOOST. All rights reserved.</span>
+          <span>Made with care</span>
+        </div>
+      </div>
+    </footer>
+    <!-- FATHER ICON -->
+    <script>
+      feather.replace();
+    </script>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
